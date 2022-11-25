@@ -1,0 +1,645 @@
+[ 
+    {
+        "Description": "Description:",
+        "Topic:": "Moodle form element types are not applied to some 'repeated' elements",
+        "Severity:": "Minor",
+        "Versions affected:": "2.2, 2.1 to 2.1.3+ (earlier versions unaffected)",
+        "Reported by:": "Ruslan Kabalin",
+        "Issue no.:": "MDL-30560",
+        "Changes (master):": "http://git.moodle.org/gw?p=moodle.git;a=commit;h=51070abc78b9e1db1db9a44855e8623b22bebd48"
+    },
+    {
+        "Description": "Description:",
+        "Topic:": "iPad Autofill Functionality reveals users password on Moodle create groups page",
+        "Severity:": "Serious",
+        "Versions affected:": "2.2, 2.1 to 2.1.3+, 2.0 to 2.0.6+ (1.9 not affected)",
+        "Reported by:": "Mike Wilson",
+        "Issue no.:": "MDL-29917",
+        "Changes (master):": "http://git.moodle.org/gw?p=moodle.git&a=search&h=HEAD&st=commit&s=MDL-29917"
+    },
+    {
+        "Description": "Description:",
+        "Topic:": "Anonymous frontpage forums call generates sesskey value",
+        "Severity:": "Minor",
+        "Versions affected:": "2.1 to 2.1.3+, 2.0 to 2.0.6+ (2.2, 1.9 not affected)",
+        "Reported by:": "Stephen Overall",
+        "Workaround:": "Do not use an anonymous forum on the front page",
+        "Issue no.:": "MDL-27334",
+        "Changes (master):": "http://git.moodle.org/gw?p=moodle.git&a=search&h=HEAD&st=commit&s=MDL-27334"
+    },
+    {
+        "Description": "Description:",
+        "Topic:": "Teacher can assign role in self-enrolment for his course as manager even if assign role is disabled",
+        "Severity:": "Minor",
+        "Versions affected:": "2.2, 2.1 to 2.1.3+ (earlier versions unaffected)",
+        "Reported by:": "Ibrahim Awad",
+        "Workaround:": "Disable self-enrolment",
+        "Issue no.:": "MDL-29469",
+        "Changes (master):": "http://git.moodle.org/gw?p=moodle.git&a=search&h=HEAD&st=commit&s=MDL-29469"
+    },
+    {
+        "Description": "Description:",
+        "Topic:": "WS tokens & user->deleted status are out of sync",
+        "Severity:": "Minor",
+        "Versions affected:": "2.2, 2.1 to 2.1.3+, 2.0 to 2.0.6+ (1.9 not affected)",
+        "Reported by:": "Eloy Lafuente",
+        "Issue no.:": "MDL-28126",
+        "Changes (master):": "http://git.moodle.org/gw?p=moodle.git&a=search&h=HEAD&st=commit&s=MDL-28126"
+    },
+    {
+        "Description": "Description:",
+        "Topic:": "Header injection in PHPMailer library",
+        "Severity:": "Serious",
+        "Versions affected:": "2.2, 2.1 to 2.1.3+, 2.0 to 2.0.6+, 1.9 to 1.9.15+",
+        "Reported by:": "Simon Coggins",
+        "Issue no.:": "MDL-30575",
+        "Changes (master):": "http://git.moodle.org/gw?p=moodle.git;a=commit;h=62988bf0bbc73df655f51884aaf1f523928abff9"
+    },
+    {
+        "Description": "Description:",
+        "Topic:": "No validation performed on email address setting",
+        "Severity:": "Minor",
+        "Versions affected:": "2.2, 2.1 to 2.1.3+, 2.0 to 2.0.6+, 1.9 to 1.9.15+",
+        "Reported by:": "John Ehringer",
+        "Issue no.:": "MDL-13572",
+        "Changes (master):": "http://git.moodle.org/gw?p=moodle.git&a=search&h=HEAD&st=commit&s=MDL-13572"
+    },
+    {
+        "Description": "Description:",
+        "Topic:": "rc4encrypt function uses hardcoded key",
+        "Severity:": "Minor",
+        "Versions affected:": "2.2, 2.1 to 2.1.3+, 2.0 to 2.0.6+, 1.9 to 1.9.15+",
+        "Reported by:": "Rajesh Taneja",
+        "Workaround": "Manually change encryption key",
+        "Issue no.:": "MDL-28948",
+        "Changes (master):": "http://git.moodle.org/gw?p=moodle.git&a=search&h=HEAD&st=commit&s=MDL-28948"
+    },
+    {
+        "Description": "Description:",
+        "Topic:": "New setting: CFG->forceloginforprofileimages",
+        "Severity:": "Minor",
+        "Versions affected:": "2.2, 2.1 to 2.1.3+, 2.0 to 2.0.6+, 1.9 to 1.9.15+",
+        "Reported by:": "Eloy Lafuente",
+        "Issue no.:": "MDL-29844",
+        "Changes (master):": "http://git.moodle.org/gw?p=moodle.git;a=commit;h=90911c4ff98dc2078a3acef5ddf5a1a8f7e20ba5"
+    },
+    {
+        "Description": "Description:",
+        "Topic:": "Auto completion not disabled for password field in login form",
+        "Severity:": "Minor",
+        "Versions affected:": "2.2, 2.1 to 2.1.3+, 2.0 to 2.0.6+, 1.9 to 1.9.15+",
+        "Reported by:": "Andrea Bicciolo",
+        "Issue no.:": "MDL-30336",
+        "Changes (master):": "http://git.moodle.org/gw?p=moodle.git&a=search&h=HEAD&st=commit&s=MDL-30336"
+    },
+    {
+        "Description": "Description:",
+        "Topic:": "Forum's user.php exposes user details in 1.9.x",
+        "Severity:": "Minor",
+        "Versions affected:": "1.9 to 1.9.15+ (later versions not affected)",
+        "Reported by:": "Michael de Raadt",
+        "Issue no.:": "MDL-30012",
+        "Changes (1.9):": "http://git.moodle.org/gw?p=moodle.git&a=search&h=refs%2Fheads%2FMOODLE_19_STABLE&st=commit&s=MDL-30012"
+    },
+    {
+        "Description": "Description:",
+        "Topic:": "Recaptchalib.php improvements for https users",
+        "Severity:": "Minor",
+        "Versions affected:": "2.2, 2.1 to 2.1.3+, 2.0 to 2.0.6+, 1.9 to 1.9.15+",
+        "Reported by:": "James Snell",
+        "Workaround:": "Avoid using recaptcha",
+        "Issue no.:": "MDL-27364",
+        "Changes (master):": "http://git.moodle.org/gw?p=moodle.git&a=search&h=HEAD&st=commit&s=MDL-27364"
+    },
+    {
+        "Description": "Description:",
+        "Topic:": "When you send a message with user/action_redir you can see the emails although you had selected to hide to all",
+        "Severity:": "Minor",
+        "Versions affected:": "2.1 to 2.1.2+, 2.0 to 2.0.5+, 1.9 to 1.9.14+",
+        "Reported by:": "Fernando Graells",
+        "Issue no.:": "MDL-20627",
+        "Changes (master):": "http://git.moodle.org/gw?p=moodle.git;a=commit;h=e94113a859015a4a80b9397957b8fc4044e2951f"
+    },
+    {
+        "Description": "Description:",
+        "Topic:": "CLI cron doesn't work if blockedip used",
+        "Severity:": "Minor",
+        "Versions affected:": "2.1 to 2.1.2+, 2.0 to 2.0.5+ (1.9.x not affected)",
+        "Reported by:": "Ryan Smith",
+        "Issue no.:": "MDL-29396",
+        "Changes (master):": "http://git.moodle.org/gw?p=moodle.git;a=commit;h=ade30ad3c420ce035a3d68287db701b70e806b3f",
+        "Workaround:": "Avoid CLI or do not rely on IP blocking"
+    },
+    {
+        "Description": "Description:",
+        "Topic:": "print_object in datalib.php should have some validation to make sure it's not exploited",
+        "Severity:": "Minor",
+        "Versions affected:": "2.1 to 2.1.2+, 2.0 to 2.0.5+ (1.9.x not affected)",
+        "Reported by:": "Rajesh Taneja",
+        "Issue no.:": "MDL-28947",
+        "Changes (master):": "http://git.moodle.org/gw?p=moodle.git;a=commit;h=187672608ec96659e07f2461b3b83634debd16cb",
+        "Workaround:": "Avoid leaving debugging code behind"
+    },
+    {
+        "Description": "Description:",
+        "Topic:": "webservice access tokens ignore login restrictions",
+        "Severity:": "Serious",
+        "Versions affected:": "2.1 to 2.1.2+, 2.0 to 2.0.5+ (1.9.x not affected)",
+        "Reported by:": "Petr \u0160koda",
+        "Issue no.:": "MDL-28629",
+        "Changes (master):": "http://git.moodle.org/gw?p=moodle.git&a=search&h=HEAD&st=commit&s=MDL-28629",
+        "Workaround:": "Turn off web services"
+    },
+    {
+        "Description": "Description:",
+        "Topic:": "moodle/course:changeidnumber permission is ignored when restoring a course into an existing course",
+        "Severity:": "Minor",
+        "Versions affected:": "2.1 to 2.1.2+, 2.0 to 2.0.5+ (1.9.x not affected)",
+        "Reported by:": "Andrew Nicols",
+        "Issue no.:": "MDL-29591",
+        "Changes (master):": "http://git.moodle.org/gw?p=moodle.git&a=search&h=HEAD&st=commit&s=MDL-29591"
+    },
+    {
+        "Description": "Hello. I have problems with moodle 2.0.6+. After installation an error: \" Fatal error: Call to undefined function json_encode() in /home/educom/moodle.educom.su/docs/lib/outputcomponents.php on line 1656\""
+    },
+    {
+        "Description": "Description:",
+        "Topic:": "ip_in_range always returns true",
+        "Severity:": "Serious",
+        "Versions affected:": "1.9 to 1.9.14+ (2.x not affected)",
+        "Reported by:": "Patrick McNeill",
+        "Issue no.:": "MDL-29551",
+        "Changes (1.9):": "http://git.moodle.org/gw?p=moodle.git;a=commitdiff;h=3ab2851d2a59721445945d0706c58092e07e861e",
+        "Workaround:": "Do not rely in IP address restriction with MNet"
+    },
+    {
+        "Description": "Description:",
+        "Topic:": "Password policy misconfiguration results in blank password from password reset",
+        "Severity:": "Minor",
+        "Versions affected:": "2.1 to 2.1.2+, 2.0 to 2.0.5+, 1.9 to 1.9.14+",
+        "Reported by:": "Stephen Mc Guinness",
+        "Issue no.:": "MDL-29893",
+        "Changes (master):": "http://git.moodle.org/gw?p=moodle.git;a=commitdiff;h=e079e82c087becf06d902089d14f3f76686bde19",
+        "Workaround:": "Do not set password policy length values to zero"
+    },
+    {
+        "Description": "Description:",
+        "Topic:": "CRLF injection/HTTP response splitting affecting /calendar/set.php",
+        "Severity:": "Serious",
+        "Versions affected:": "2.1 to 2.1.2+, 2.0 to 2.0.5+, 1.9 to 1.9.14+",
+        "Reported by:": "David Michael Evans, German Sanchez Garces",
+        "Issue no.:": "MDL-29925",
+        "Changes (master):": "http://git.moodle.org/gw?p=moodle.git;a=commitdiff;h=581e8dba387f090d89382115fd850d8b44351526"
+    },
+    {
+        "Description": "Description:",
+        "Topic:": "Change password form is sent over HTTP when httpslogin = true",
+        "Severity:": "Minor",
+        "Versions affected:": "1.9 to 1.9.14+ (2.x not affected)",
+        "Reported by:": "Darragh Enright",
+        "Issue no.:": "MDL-29092",
+        "Changes (1.9):": "http://git.moodle.org/gw?p=moodle.git;a=commitdiff;h=01dd64a8c8aa95f793accea371b2392e662663c5"
+    },
+    {
+        "Description": "Description:",
+        "Topic:": "MNET auth and \"Login As\" functionality",
+        "Severity:": "Minor",
+        "Versions affected:": "2.1 to 2.1.2+, 2.0 to 2.0.5+, 1.9 to 1.9.14+",
+        "Reported by:": "vickerylm",
+        "Issue no.:": "MDL-29977",
+        "Changes (master):": "http://git.moodle.org/gw?p=moodle.git;a=commitdiff;h=10df8657c1c138c0d0ab1d4796c552fcec0c299b",
+        "Workaround:": "Turn off MNet or \"Login as\""
+    },
+    {
+        "Description": "Description:",
+        "Topic:": "security key web service tokens are displayed when the service is disabled or if the user is not authorized any more",
+        "Severity:": "Minor",
+        "Versions affected:": "2.1 to 2.1.2+, 2.0 to 2.0.5+ (1.9.x not affected)",
+        "Reported by:": "Jerome Mouneyrac",
+        "Issue no.:": "MDL-28670",
+        "Changes (master):": "http://git.moodle.org/gw?p=moodle.git&a=search&h=HEAD&st=commit&s=MDL-28670&sr=1",
+        "Workaround:": "Do not enable then disable web services"
+    },
+    {
+        "Description": "tolongin ane plizz pas ane install moodle di hosting.. timbul pesan \"XML DATABASE FILE ERRORS FOUND\""
+    },
+    {
+        "Description": "Description:",
+        "Topic:": "Calendar doesn't check $returnurl is valid",
+        "Severity:": "Minor",
+        "Versions affected:": "2.1 to 2.1.2+ (2.0.x, 1.9.x not affected)",
+        "Reported by:": "Dan Marsden",
+        "Issue no.:": "MDL-28720",
+        "Changes (master):": "http://git.moodle.org/gw?p=moodle.git&a=search&h=HEAD&st=commit&s=MDL-28720&sr=1"
+    },
+    {
+        "Description": "Description:",
+        "Topic:": "wiki leaks creator's username in history & deletion UI",
+        "Severity:": "Minor",
+        "Versions affected:": "2.1 to 2.1.2+, 2.0 to 2.0.5+ (1.9.x not affected)",
+        "Reported by:": "Sunner Sun",
+        "Issue no.:": "MDL-29191",
+        "Changes (master):": "http://git.moodle.org/gw?p=moodle.git;a=commit;h=140af2a0f0a4598bf568b9ae182cb81eb583edeb"
+    },
+    {
+        "Description": "Description:",
+        "Topic:": "mod/forum/user.php exploses user details",
+        "Severity:": "Minor",
+        "Versions affected:": "< 2.1.2, < 2.0.5, < 1.9.14",
+        "Reported by:": "Rossiani Wijaya",
+        "Issue no.:": "MDL-28615",
+        "Solution:": "upgrade to latest version",
+        "Changes (master):": "http://git.moodle.org/gw?p=moodle.git&a=search&s=MDL-28615"
+    },
+    {
+        "Description": "Description:",
+        "Topic:": "XSS through 'section' parameter",
+        "Severity:": "Serious",
+        "Versions affected:": "< 2.1.2, < 2.0.5 (1.9.x not affected)",
+        "Reported by:": "Petr \u0160koda",
+        "Issue no.:": "MDL-28725",
+        "Solution:": "upgrade to latest version",
+        "Changes (master):": "http://git.moodle.org/gw?p=moodle.git;a=commit;h=41017112cff7f5bd7969c72d321320f3090e7c68"
+    },
+    {
+        "Description": "Description:",
+        "Topic:": "Magic quotes hardening of 1.9",
+        "Severity:": "Serious",
+        "Versions affected:": "< 1.9.14 (2.x not affected)",
+        "Reported by:": "Petr \u0160koda",
+        "Issue no.:": "MDL-29033",
+        "Solution:": "upgrade to 1.9.14",
+        "Changes (1.9):": "http://git.moodle.org/gw?p=moodle.git;a=commitdiff;h=bf0ddcb332998e14b2deeb2fff1e7e6849ce65d6"
+    },
+    {
+        "Description": "Description:",
+        "Topic:": "Potential XSS: editsection.html print values directly from data_submitted()",
+        "Severity:": "Minor",
+        "Versions affected:": "< 1.9.14 (2.x not affected)",
+        "Reported by:": "Aaron Barnes",
+        "Issue no.:": "MDL-28722",
+        "Solution:": "upgrade to 1.9.14",
+        "Changes (1.9):": "http://git.moodle.org/gw?p=moodle.git;a=commit;h=4a2acd8c7e6c869d5fd5aa686e6e0a3f20c97f15"
+    },
+    {
+        "Description": "Description:",
+        "Topic:": "Message refreshing system may cause unlimited queries and DDos attack",
+        "Severity:": "Serious",
+        "Versions affected:": "< 1.9.14 (2.x not affected)",
+        "Reported by:": "Xavier Paz",
+        "Issue no.:": "MDL-29311",
+        "Solution:": "upgrade to 1.9.14",
+        "Changes (1.9):": "http://git.moodle.org/gw?p=moodle.git;a=commit;h=97f258fabb3ebfa7acc7c02cb59de92b01710f99"
+    },
+    {
+        "Description": "Description:",
+        "Topic:": "prevent $CFG->usesid because hackers try to exploit it",
+        "Severity:": "Minor",
+        "Versions affected:": "< 2.1.2, < 2.0.5 (1.9.x could also be vulnerable if misconfigured)",
+        "Reported by:": "Petr \u0160koda",
+        "Issue no.:": "MDL-29312",
+        "Solution:": "upgrade to latest version",
+        "Changes (master):": "http://git.moodle.org/gw?p=moodle.git;a=commit;h=e1e082a809b9a2d3a408cb4d6faa34fdfcf3165c",
+        "Workaround:": "Don't use cookie-less sessions"
+    },
+    {
+        "Description": "Description:",
+        "Topic:": "Chat disclosed full names of all system users including deleted users",
+        "Severity:": "Serious",
+        "Versions affected:": "< 2.1.2, < 2.0.5 (1.9.x not affected)",
+        "Reported by:": "Petr \u0160koda",
+        "Issue no.:": "MDL-27219",
+        "Solution:": "upgrade to latest version",
+        "Changes (master):": "http://git.moodle.org/gw?p=moodle.git;a=commit;h=d0157d827bc254ba386a5e5b41b13be2698ee76e",
+        "Workaround:": "Do not use Chat"
+    },
+    {
+        "Description": "Description:",
+        "Topic:": "Column registration_hubs.secret gets different default value for upgrade versus install",
+        "Severity:": "Serious",
+        "Versions affected:": "< 2.1.2, < 2.0.5 (1.9.x not affected)",
+        "Reported by:": "Colin Campbell",
+        "Issue no.:": "MDL-27635",
+        "Solution:": "upgrade to latest version",
+        "Changes (master):": "http://git.moodle.org/gw?p=moodle.git;a=commit;h=ca896fdfcfcc87846fa91a297d0aa6999a68c48a",
+        "Workaround:": "Do not use community hubs"
+    },
+    {
+        "Description": "Description:",
+        "Topic:": "Incorrect handling of openssl_verify() return code",
+        "Severity:": "Serious",
+        "Versions affected:": "< 2.1.2, < 2.0.5, < 1.9.14",
+        "Reported by:": "David Mudrak",
+        "Issue no.:": "MDL-29148",
+        "Solution:": "upgrade to latest version",
+        "Changes (master):": "http://git.moodle.org/gw?p=moodle.git;a=commit;h=54941685e3e86ec085641dcb7ebb1f96f06735b2",
+        "Workaround:": "Disable MNET"
+    },
+    {
+        "Description": "Description:",
+        "Topic:": "$mform->setConstant() does not work as expected",
+        "Severity:": "Serious",
+        "Versions affected:": "< 2.1.2, < 2.0.5, < 1.9.14",
+        "Reported by:": "David Mudrak",
+        "Issue no.:": "MDL-23872",
+        "Solution:": "upgrade to latest version",
+        "Changes (master):": "http://git.moodle.org/gw?p=moodle.git;a=commit;h=f1f70bd4dde6cd1ea4bdb8ab28fa3d36a53b89d8"
+    },
+    {
+        "Description": "Description:",
+        "Topic:": "Box.net repository has security flaws",
+        "Severity:": "Serious",
+        "Versions affected:": "< 2.1.2, < 2.0.5 (1.9.x not affected)",
+        "Reported by:": "Alex Willen",
+        "Issue no.:": "MDL-27289",
+        "Solution:": "upgrade to latest version",
+        "Changes (master):": "http://git.moodle.org/gw?p=moodle.git;a=commit;h=3deff6c9d2bb4ab3144b3ca7b93d6a2ef6a87af2",
+        "Workaround:": "Disable the Box.net repository"
+    },
+    {
+        "Description": "Description:",
+        "Topic:": "Server files shows all categories and courses even if a user don't have access to them",
+        "Severity:": "Minor",
+        "Versions affected:": "< 2.1.2, < 2.0.5 (1.9.x not affected)",
+        "Reported by:": "Ralf Hilgenstock",
+        "Issue no.:": "MDL-27586",
+        "Solution:": "upgrade to latest version",
+        "Changes (master):": "http://git.moodle.org/gw?p=moodle.git;a=commit;h=f6b07c4da54a9db24723beb147e8a19a3d487e00"
+    },
+    {
+        "Description": "Description:",
+        "Topic:": "XSS in Wiki comments",
+        "Severity:": "Serious",
+        "Versions affected:": "< 2.1.2, < 2.0.5 (1.9.x not affected)",
+        "Reported by:": "Petr \u0160koda",
+        "Issue no.:": "MDL-28726",
+        "Solution:": "upgrade to latest version",
+        "Changes (master):": "http://git.moodle.org/gw?p=moodle.git;a=commit;h=a459fd90625ae44d7b3ac10b65da2dc631a418e7"
+    },
+    {
+        "Description": "Description:",
+        "Topic:": "CSRF in several places",
+        "Severity:": "Serious",
+        "Versions affected:": "< 2.1.2, < 2.0.5 (1.9.x not affected)",
+        "Reported by:": "Petr \u0160koda",
+        "Issue no.:": "MDL-28724",
+        "Solution:": "upgrade to latest version",
+        "Changes (master):": "http://git.moodle.org/gw?p=moodle.git;a=commit;h=48346fb11f8ced06a05c0618b02a3a925b34ec59"
+    },
+    {
+        "Description": "Description:",
+        "Topic:": "Flat file enrollments has various sql injection vulnerabilities",
+        "Severity:": "Serious",
+        "Versions affected:": "< 1.9.13 (2.x not affected)",
+        "Reported by:": "Matt Meisberger",
+        "Issue no.:": "MDL-28360",
+        "Solution:": "upgrade to 1.9.13",
+        "Workaround:": "escape quotes in user upload CSV files"
+    },
+    {
+        "Description": "Description:",
+        "Topic:": "SQL injection vulnerability in user upload",
+        "Severity:": "Serious",
+        "Versions affected:": "< 1.9.13 (2.x not affected)",
+        "Reported by:": "Matt Meisberger",
+        "Issue no.:": "MDL-28197",
+        "Solution:": "upgrade to 1.9.13",
+        "Workaround:": "escape quotes in user upload CSV files"
+    },
+    {
+        "Description": "Description:",
+        "Topic:": "Recaptcha is still authenticating to old servers on Moodle 1.9",
+        "Severity:": "Minor",
+        "Versions affected:": "< 1.9.13 (2.x not affected)",
+        "Reported by:": "Ryan Charpentier",
+        "Issue no.:": "MDL-27889",
+        "Solution:": "upgrade to 1.9.13",
+        "Workaround:": "manually change URL to \"https://www.google.com/recaptcha/api\""
+    },
+    {
+        "Description": "Description:",
+        "Topic:": "Guests can add comments to front page activities",
+        "Severity:": "Serious",
+        "Versions affected:": "< 2.0.4, < 2.1.1 (1.9.x not affected)",
+        "Reported by:": "Helen Foster",
+        "Issue no.:": "MDL-28503",
+        "Solution:": "upgrade to 2.0.4 or 2.1.1",
+        "Workaround:": "Don't enable comments for front page activities or use a comments block"
+    },
+    {
+        "Description": "Description:",
+        "Topic:": "Course creator role has incorrect default permissions",
+        "Severity:": "Minor",
+        "Versions affected:": "< 2.0.4, < 2.1.1 (1.9.x not affected)",
+        "Reported by:": "Ray Lawrence",
+        "Issue no.:": "MDL-27994",
+        "Solution:": "Manually alter permissions in older sites to remove rights from course creators"
+    },
+    {
+        "Description": "Description:",
+        "Topic:": "moodle_enrol_external:role_assign() does not obey role assignment restrictions",
+        "Severity:": "Minor",
+        "Versions affected:": "< 2.0.4, < 2.1.1 (1.9.x not affected)",
+        "Reported by:": "Petr \u0160koda",
+        "Issue no.:": "MDL-28350",
+        "Solution:": "upgrade to 2.0.4 or 2.1.1",
+        "Workaround:": "avoid using web services"
+    },
+    {
+        "Description": "Description:",
+        "Topic:": "Continuation link can sometimes link offsite",
+        "Severity:": "Minor",
+        "Versions affected:": "< 1.9.13, < 2.0.4, < 2.1.1",
+        "Reported by:": "Matt Meisberger",
+        "Issue no.:": "MDL-27464",
+        "Solution:": "upgrade to latest version",
+        "Workaround:": "apply patch"
+    },
+    {
+        "Description": "Description:",
+        "Topic:": "Theme cache folder",
+        "Severity:": "Minor",
+        "Versions affected:": "< 2.0.4, < 2.1.1 (1.9.x not affected)",
+        "Reported by:": "Matthew Davidson",
+        "Issue no.:": "MDL-28147",
+        "Solution:": "upgrade to 2.0.4 or 2.1.1",
+        "Workaround:": "apply Git patch"
+    },
+    {
+        "Description": "MDL-28432",
+        "Topic:": "Cohort enrol plugin capability problems and missing cohort access control",
+        "Severity:": "Minor",
+        "Versions affected:": "< 2.0.4, < 2.1.1 (1.9.x not affected)",
+        "Reported by:": "Petr \u0160koda",
+        "Issue no.:": "\nMDL-28432\n",
+        "Solution:": "upgrade to 2.0.4 or 2.1.1",
+        "Workaround:": "avoid using cohorts"
+    },
+    {
+        "Description": "Description:",
+        "Topic:": "Ability to generate invalid records in the comments table in the database",
+        "Severity:": "Major",
+        "Versions affected:": "< 2.0.3 (1.9.x not affected)",
+        "Reported by:": "Sam Hemelryk",
+        "Issue no.:": "MDL-26854",
+        "Solution:": "Upgrade to 2.0.3",
+        "Workaround:": "None - please upgrade as soon as possible"
+    },
+    {
+        "Description": "Description:",
+        "Topic:": "Ability to fill a database with invalid records through ratings",
+        "Severity:": "Major",
+        "Versions affected:": "< 2.0.3 (1.9.x not affected)",
+        "Reported by:": "Sam Hemelryk",
+        "Issue no.:": "MDL-26838",
+        "Solution:": "Upgrade to the latest version",
+        "Workaround:": "None - please upgrade to the latest version as soon as possible"
+    },
+    {
+        "Description": "Description:",
+        "Topic:": "Cross Site Scripting in multiple pages",
+        "Severity:": "Major",
+        "Versions affected:": "< 1.9.12",
+        "Reported by:": "Panagiotis Petasis",
+        "Issue no.:": "MDL-26966",
+        "Solution:": "Upgrade to the latest version"
+    },
+    {
+        "Description": "Description:",
+        "Topic:": "System user profile leaks email when maildisplay == 2",
+        "Severity:": "Major",
+        "Versions affected:": "< 2.0.3 (1.9.x not affected)",
+        "Reported by:": "Petr \u0160koda",
+        "Issue no.:": "MDL-26621",
+        "Solution:": "Upgrade to 2.0.3",
+        "Workaround:": "Disable email display in profiles"
+    },
+    {
+        "Description": "Description:",
+        "Topic:": "Quiz review page does not check and enforce separate groups mode",
+        "Severity:": "Major",
+        "Versions affected:": "< 1.9.12 and < 2.0.3",
+        "Reported by:": "Claire Browne",
+        "Issue no.:": "MDL-25122",
+        "Solution:": "Upgrade to the latest version",
+        "Workaround:": "Remove permission to view quiz reports"
+    },
+    {
+        "Description": "Description:",
+        "Topic:": "\"Force password change\" not happening",
+        "Severity:": "Minor",
+        "Versions affected:": "< 2.0.3 (1.9.x not affected)",
+        "Reported by:": "Stephen Overall",
+        "Issue no.:": "MDL-26803",
+        "Solution:": "Upgrade to 2.0.3",
+        "Workaround:": "After uploading users via CSV, force password change using bulk user actions"
+    },
+    {
+        "Description": "Description:",
+        "Topic:": "Multiple cross-site scripting problems in media filter",
+        "Severity:": "Major",
+        "Versions affected:": "<1.9.11 and <2.0.2",
+        "Reported by:": "Internal code review",
+        "Issue no.:": "MDL-26030",
+        "Solution:": "Upgrade to latest version",
+        "Workaround:": "Disable media filter"
+    },
+    {
+        "Description": "Description:",
+        "Topic:": "Incorrect default for mod:course/delete capability in teacher role",
+        "Severity:": "Potential problem",
+        "Versions affected:": "<2.0.2 (1.9.x not affected)",
+        "Reported by:": "Patrick Pollet",
+        "Issue no.:": "MDL-25672",
+        "Solution:": "Fix teacher role permissions manually"
+    },
+    {
+        "Description": "Description:",
+        "Topic:": "My profile block may disclose private information if used in user context",
+        "Severity:": "Minor",
+        "Versions affected:": "<2.0.2 (1.9.x not affected)",
+        "Reported by:": "Internal code review",
+        "Issue no.:": "MDL-26034",
+        "Solution:": "Upgrade to latest version",
+        "Workaround:": "Uninstall the myprofile block and delete block/myprofile files"
+    },
+    {
+        "Description": "Description:",
+        "Topic:": "IMS enterprise enrolment file may disclose sensitive information",
+        "Severity:": "Major",
+        "Versions affected:": "<1.9.11 and <2.0.2",
+        "Reported by:": "Internal code review",
+        "Issue no.:": "MDL-26189",
+        "Solution:": "Upgrade to latest version",
+        "Workaround:": "Move the imsenterprise-enrol.xml file outside of the course files area"
+    },
+    {
+        "Description": "Description:",
+        "Topic:": "Cross-site scripting vulnerability in course tags",
+        "Severity:": "Major",
+        "Versions affected:": "<2.0.2 (1.9.x not affected)",
+        "Reported by:": "Internal code review",
+        "Issue no.:": "MDL-26196",
+        "Solution:": "Upgrade to latest version",
+        "Workaround:": "Disable tags"
+    },
+    {
+        "Description": "Description:",
+        "Topic:": "Cross-site request forgery and missing access control in course completion",
+        "Severity:": "Major",
+        "Versions affected:": "<2.0.2 (1.9.x not affected)",
+        "Reported by:": "Internal code review",
+        "Issue no.:": "MDL-26198",
+        "Solution:": "Upgrade to latest version",
+        "Workaround:": "Disable course completion"
+    },
+    {
+        "Description": "Description:",
+        "Topic:": "Cross-site scripting vulnerability in spikephpcoverage",
+        "Severity:": "Major",
+        "Versions affected:": "<2.0.2 (1.9.x not affected)",
+        "Reported by:": "AutoSec Tools",
+        "Issue no.:": "MDL-26237",
+        "Solution:": "Upgrade to latest version",
+        "Workaround:": "Delete lib/spikephpcoverage/src/phpcoverage.remote.top.inc.php and lib/spikephpcoverage/src/phpcoverage.remote.bottom.inc.php"
+    },
+    {
+        "Description": "Description:",
+        "Topic:": "$CFG->forceloginforprofiles option ignored for course profiles",
+        "Severity:": "Major",
+        "Versions affected:": "<2.0.2 (1.9.x not affected)",
+        "Reported by:": "Amr Hourani",
+        "Issue no.:": "MDL-26389",
+        "Solution:": "Upgrade to latest version",
+        "Workaround:": "Enable $CFG->forcelogin and disable $CFG->opentogoogle (recommended settings for sites with high privacy requirements)"
+    },
+    {
+        "Description": "Description:",
+        "Topic:": "Cross-site scripting vulnerability in tag autocomplete",
+        "Severity:": "Major",
+        "Versions affected:": "<1.9.11 and <2.0.2",
+        "Reported by:": "gose",
+        "Issue no.:": "MDL-25754",
+        "Solution:": "Upgrade to latest version",
+        "Workaround:": "Delete /tag/tag_autocomplete.php file"
+    },
+    {
+        "Description": "Description:",
+        "Topic:": "Cross-site request forgery in RSS block",
+        "Severity:": "Major",
+        "Versions affected:": "<1.9.11 (2.0.x not vulnerable)",
+        "Reported by:": "Dan Poltawski",
+        "Issue no.:": "MDL-18839",
+        "Solution:": "Upgrade to 1.9.11",
+        "Workaround:": "Delete the RSS feeds block"
+    },
+    {
+        "Description": "Description:",
+        "Topic:": "Multiple phpCAS library vulnerabilities",
+        "Severity:": "Major",
+        "Versions affected:": "< 1.9.10 and < 1.8.14",
+        "Reported by:": "Multiple reporters http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-2795 http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-2796 http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3690 http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3691 http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3692",
+        "Issue no.:": "MDL-24789",
+        "Solution:": "Upgrade to latest release or if you do not use CAS authentication delete the /auth/cas/* directory"
+    }
+]
