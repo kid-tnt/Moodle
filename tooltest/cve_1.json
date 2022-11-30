@@ -3664,7 +3664,7 @@
     {
         "Description": "CVE Identifier:",
         "Topic:": "/enrol/externallib.php method core_enrol_external .get_enrolled_users() uses undefined $context and $coursecontext's in 3 has_capability() calls",
-        "Severity:": "Major",
+        "Severity/Risk:": "Major",
         "Versions affected:": "2.2 to 2.2.1+",
         "Reported by:": "Petr \u0160koda",
         "Issue no.:": "MDL-31178",
@@ -3674,7 +3674,7 @@
     {
         "Description": "Workaround:",
         "Topic:": "HTML5 apps cannot call Web services functions if an HTTP resource is retrieved from the Moodle installation",
-        "Severity:": "Minor",
+        "Severity/Risk:": "Minor",
         "Versions affected:": "2.2 to 2.2.1+, 2.1 to 2.1.4+",
         "Reported by:": "Juan Leyva",
         "Workaround:": "Disable Web services",
@@ -3684,7 +3684,7 @@
     {
         "Description": "Workaround:",
         "Topic:": "Adding Tag to an unavailable course makes it visible to students",
-        "Severity:": "Minor",
+        "Severity/Risk:": "Minor",
         "Versions affected:": "2.2 to 2.2.1+, 2.1 to 2.1.4+",
         "Reported by:": "Ivo \u0160melhaus",
         "Workaround:": "Don't enable block_tags_showcoursetags",
@@ -3695,7 +3695,7 @@
     {
         "Description": "CVE Identifier:",
         "Topic:": "Not enrolled users (admins...) are able to subscribe/unsubscribe themselves via mod/forum/index.php",
-        "Severity:": "Minor",
+        "Severity/Risk:": "Minor",
         "Versions affected:": "2.2 to 2.2.1+, 2.1 to 2.1.4+",
         "Reported by:": "Eloy Lafuente",
         "Issue no.:": "MDL-31426",
@@ -3705,7 +3705,7 @@
     {
         "Description": "CVE Identifier:",
         "Topic:": "Overview report shows hidden courses",
-        "Severity:": "Minor",
+        "Severity/Risk:": "Minor",
         "Versions affected:": "2.2 to 2.2.1+, 2.1 to 2.1.4+",
         "Reported by:": "Mark Nelson",
         "Issue no.:": "MDL-29892",
@@ -3715,7 +3715,7 @@
     {
         "Description": "CVE Identifier:",
         "Topic:": "Gradeboook export allows role that cannot see hidden grades to export all grade and hidden is viewable",
-        "Severity:": "Minor",
+        "Severity/Risk:": "Minor",
         "Versions affected:": "2.2 to 2.2.1+, 2.1 to 2.1.4+",
         "Reported by:": "Kathryn Fortin",
         "Issue no.:": "MDL-29080",
@@ -3725,7 +3725,7 @@
     {
         "Description": "Workaround:",
         "Topic:": "'Full name format' set to 'First name' within 'Site Policies', but breadcrumbs show First + Last Name.",
-        "Severity:": "Minor",
+        "Severity/Risk:": "Minor",
         "Versions affected:": "2.2 to 2.2.1+, 2.1 to 2.1.4+, 2.0 to 2.0.7+",
         "Reported by:": "John Fitchett",
         "Workaround:": "Use lang file based full-name display",
@@ -3736,7 +3736,7 @@
     {
         "Description": "Workaround:",
         "Topic:": "authenticated user \"view\" capability set to \"allow\" for all repos",
-        "Severity:": "Minor",
+        "Severity/Risk:": "Minor",
         "Versions affected:": "2.2 to 2.2.1+, 2.1 to 2.1.4+, 2.0 to 2.0.7+",
         "Reported by:": "Andrea Bicciolo",
         "Workaround:": "Manually change capability for repositories",
@@ -3747,7 +3747,7 @@
     {
         "Description": "Workaround:",
         "Topic:": "Backup with user files includes users' private files",
-        "Severity:": "Minor",
+        "Severity/Risk:": "Minor",
         "Versions affected:": "2.2 to 2.2.1+, 2.1 to 2.1.4+, 2.0 to 2.0.7+",
         "Reported by:": "Ralf Hilgenstock",
         "Workaround:": "Disable private files",
@@ -3758,7 +3758,7 @@
     {
         "Description": "Workaround:",
         "Topic:": "core_user_update_users user password is reset if not specified",
-        "Severity:": "Minor",
+        "Severity/Risk:": "Minor",
         "Versions affected:": "2.2 to 2.2.1+, 2.1 to 2.1.4+, 2.0 to 2.0.7+",
         "Reported by:": "F\u00e1bio Souto",
         "Workaround:": "Turn off web services",
@@ -3769,7 +3769,7 @@
     {
         "Description": "Workaround:",
         "Topic:": "database activity module entries exporting does not respect separate groups",
-        "Severity:": "Minor",
+        "Severity/Risk:": "Minor",
         "Versions affected:": "2.2 to 2.2.1+, 2.1 to 2.1.4+, 2.0 to 2.0.7+, 1.9 to 1.9.16+",
         "Reported by:": "Fr\u00e9d\u00e9ric Hoogstoel",
         "Workaround:": "Disable database content export for students",

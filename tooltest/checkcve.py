@@ -1,10 +1,10 @@
 #365 vul CVE
 import json
 import re
-v='Moodle v4.0'
+v='Moodle v3.9.0'
 f = open('D:/Moodle/tooltest/cve_1.json','r')
-nvul=0
-listrisk=[]
+#nvul=0
+listserious=[]
 listminor=[]
 jsond = json.load(f)
 f.close()
@@ -136,34 +136,64 @@ def printcve(cve):
     
 vercheck=santize(v) #làm sạch version dạng x.y.z
 for data in jsond:
-    if('CVE identifier:' in data and data['CVE identifier:'] is not None and 'Versions affected:' in data and data['Versions affected:'] is not None):
+    if('CVE identifier:' in data and data['CVE identifier:'] is not None and 'Versions affected:' in data and data['Versions affected:'] is not None and 'Severity/Risk:' in data and data['Severity/Risk:'] is not None):
         stringcheck=data['Versions affected:']
-    if(vercheck in stringcheck):
-        nvul+=1
-        printcve(data)
-        continue
-    templist=[]
-    affecteds=(re.split('and|\,',stringcheck)) #['4.0 to 4.0.4', ' 3.11 to 3.11.10', ' 3.9 to 3.9.17', ' ', ' earlier unsupported versions']
-    for subs in affecteds:
-        if('to' in subs):
-            lissub=re.split('to',subs)
-            #check(vercheck,lissub) # kiểm tra v trong lissub, gói thông tin và return luôn
-            if(equalver(vercheck,lissub[0])or equalver(vercheck,lissub[1])):
-                nvul+=1
-                printcve(data)
-                break
-            elif(isNewer(vercheck,lissub[0]) and isOlder(vercheck,lissub[1])):
-                nvul+=1
-                printcve(data)
-                break
-            for sub in lissub:
-                templist.append(sub)
-        #print(templist)
-        if('earlier' in subs):
-            if(isOlder(vercheck,Oldest(templist))):
-                nvul+=1
-                printcve(data)
-                break
-print("\nVulnerabilities found: " + str(nvul))
-print("\nSerious: " + str(1))
-print("\nMinor: " + str(2))
+        if(vercheck in stringcheck):
+            if( 'Serious' in data['Severity/Risk:']):
+                listserious.append(data)
+            if( 'Minor' in data['Severity/Risk:']):
+                listminor.append(data)
+            #nvul+=1
+            #printcve(data)
+            continue
+        templist=[]
+        affecteds=(re.split('and|\,',stringcheck)) #['4.0 to 4.0.4', ' 3.11 to 3.11.10', ' 3.9 to 3.9.17', ' ', ' earlier unsupported versions']
+        for subs in affecteds:
+            if('to' in subs):
+                lissub=re.split('to',subs)
+                #check(vercheck,lissub) # kiểm tra v trong lissub, gói thông tin và return luôn
+                if(equalver(vercheck,lissub[0])or equalver(vercheck,lissub[1])):
+                    if( 'Serious' in data['Severity/Risk:']):
+                        listserious.append(data)
+                    if( 'Minor' in data['Severity/Risk:']):
+                        listminor.append(data)
+                    # nvul+=1
+                    # printcve(data)
+                    break
+                elif(isNewer(vercheck,lissub[0]) and isOlder(vercheck,lissub[1])):
+                    if( 'Serious' in data['Severity/Risk:']):
+                        listserious.append(data)
+                    if( 'Minor' in data['Severity/Risk:']):
+                        listminor.append(data)
+                    # nvul+=1
+                    # printcve(data)
+                    break
+                for sub in lissub:
+                    templist.append(sub)
+            #print(templist)
+            if('earlier' in subs):
+                if(isOlder(vercheck,Oldest(templist))):
+                    if( 'Serious' in data['Severity/Risk:']):
+                        listserious.append(data)
+                    if( 'Minor' in data['Severity/Risk:']):
+                        listminor.append(data)
+                    # nvul+=1
+                    # printcve(data)
+                    break
+ser=len(listserious)
+minor=len(listminor)
+total=ser+minor
+print("\nYour Moodle version is related to " + str(total)+" CVE")
+print(str(ser)+ " CVE with Serious Risk")
+print(str(minor)+ " CVE with Minor Risk")
+print("Check information for security your Moodle version: ")
+print(150*'+')
+print("SERIOUS: \n")
+for cve in listserious:
+    printcve(cve)
+print(150*'+')
+print("Minor: \n")
+for cve in listminor:
+    printcve(cve)
+# print("\nSerious: " + str(1))
+# print("\nMinor: " + str(2))

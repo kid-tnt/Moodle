@@ -77,6 +77,10 @@ listvul=[]
 #169336-
 #160858-
 #160811
+import requests
+import json
+from bs4 import BeautifulSoup
+listvul=[]
 URI='https://moodle.org/mod/forum/discuss.php?d='
 for page in range(160857,160856,-1):
     vul={}
