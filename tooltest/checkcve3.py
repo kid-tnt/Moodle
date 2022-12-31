@@ -1,7 +1,7 @@
 #365 vul CVE
 import json
 import re
-v='Moodle v3.8.7'
+v='Moodle v3.11.4'
 f = open('D:/Moodle/tooltest/cve_1.json','r')
 #nvul=0
 listserious=[]
@@ -13,6 +13,7 @@ def santize(versions):
     versions=(re.split('v|\-',v))
     for sub_ver in versions:
         if('.'in sub_ver):
+            sub_ver = re.sub(r"\.0$", "", sub_ver)
             return sub_ver
 #count Digit of numbers
 def countDigit(n): 
@@ -42,14 +43,14 @@ def isOlder(v1,v2):
 
     for i in range(len(arr1)):
         #số chữ số nhỏ hơn thì x10 rồi sô sánh
-        if(countDigit(arr1[i])>countDigit(arr2[i])): 
-            if(arr1[i]<arr2[i]*10):
-                return True
-            else: return False
-        elif (countDigit(arr1[i])<countDigit(arr2[i])):
-            if(arr1[i]*10<arr2[i]):
-                return True
-            else: return False
+        #if(countDigit(arr1[i])>countDigit(arr2[i])): 
+        #    if(arr1[i]<arr2[i]*10):
+        #        return True
+        #    else: return False
+        #elif (countDigit(arr1[i])<countDigit(arr2[i])):
+        #    if(arr1[i]*10<arr2[i]): #nếu đầu vào nhỏ hơn cần so sánh 
+        #        return False
+        #    else: return True
         if arr1[i]<arr2[i]:
             return True
         elif arr1[i]>arr2[i]:
@@ -77,14 +78,14 @@ def isNewer(v1,v2):
             arr1.append(0)
 
     for i in range(len(arr1)):
-        if(countDigit(arr1[i])>countDigit(arr2[i])): 
-            if(arr1[i]>arr2[i]*10):
-                return True
-            else: return False
-        elif (countDigit(arr1[i])<countDigit(arr2[i])):
-            if(arr1[i]*10>arr2[i]):
-                return True
-            else: return False
+        #if(countDigit(arr1[i])>countDigit(arr2[i])): 
+        #    if(arr1[i]>arr2[i]*10):
+        #        return True
+        #    else: return False
+        #elif (countDigit(arr1[i])<countDigit(arr2[i])):
+        #    if(arr1[i]*10>arr2[i]):
+        #        return True
+        #    else: return False
         if arr1[i]>arr2[i]:
             return True
         elif arr1[i]<arr2[i]:
@@ -119,6 +120,7 @@ def Oldest(list):
     for li in list:
         if(isOlder(li,Oldest)):
             Oldest=li
+#    print(Oldest)
     return Oldest
 def printcve(cve):
     if('CVE identifier:' in cve and cve['CVE identifier:'] is not None and 'Tracker issue:' in cve and cve['Tracker issue:'] is not None):
@@ -138,33 +140,38 @@ for data in jsond:
         if(vercheck in stringcheck):
             if( 'Serious' in data['Severity/Risk:']):
                 listserious.append(data)
-            if( 'Minor' in data['Severity/Risk:']):
+            elif( 'Minor' in data['Severity/Risk:']):
                 listminor.append(data)
+                #continue
             #nvul+=1
             #printcve(data)
             continue
-        templist=[]
+            
+        templist=[] #save version to search to oldest
+        #affecteds is arraylist store version affecteds
         affecteds=(re.split('and|\,',stringcheck)) #['4.0 to 4.0.4', ' 3.11 to 3.11.10', ' 3.9 to 3.9.17', ' ', ' earlier unsupported versions']
-        for subs in affecteds:
-            if('to' in subs):
+        for subs in affecteds: # xu lí tưng thanh phan trong mang affected
+            if('to' in subs): #chua to, lay 2 phien ban
                 lissub=re.split('to',subs)
                 #check(vercheck,lissub) # kiểm tra v trong lissub, gói thông tin và return luôn
                 if(equalver(vercheck,lissub[0])or equalver(vercheck,lissub[1])):
                     if( 'Serious' in data['Severity/Risk:']):
                         listserious.append(data)
-                    if( 'Minor' in data['Severity/Risk:']):
+                    elif( 'Minor' in data['Severity/Risk:']):
                         listminor.append(data)
+                        break
                     # nvul+=1
                     # printcve(data)
-                    break
+                    #break
                 elif(isNewer(vercheck,lissub[0]) and isOlder(vercheck,lissub[1])):
                     if( 'Serious' in data['Severity/Risk:']):
                         listserious.append(data)
-                    if( 'Minor' in data['Severity/Risk:']):
+                    elif( 'Minor' in data['Severity/Risk:']):
                         listminor.append(data)
+                        break
                     # nvul+=1
                     # printcve(data)
-                    break
+                    #break
                 for sub in lissub:
                     templist.append(sub)
             #print(templist)
@@ -172,11 +179,12 @@ for data in jsond:
                 if(isOlder(vercheck,Oldest(templist))):
                     if( 'Serious' in data['Severity/Risk:']):
                         listserious.append(data)
-                    if( 'Minor' in data['Severity/Risk:']):
+                    elif( 'Minor' in data['Severity/Risk:']):
                         listminor.append(data)
+                        break
                     # nvul+=1
                     # printcve(data)
-                    break
+                    #break
 ser=len(listserious)
 minor=len(listminor)
 total=ser+minor

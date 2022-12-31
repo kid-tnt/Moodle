@@ -12,6 +12,13 @@ from packaging import version
 #     for sub_ver in versions:
 #         if('.'in sub_ver):
 #             return sub_ver
+# 3.9.0 to 3.9
+# last is 0 remove
+# def santize(versions): 
+#     for sub_ver in versions:
+#         if('.'in sub_ver):
+#             s = re.sub(r"\.0$", "", sub_ver)
+#             print(s)
 
 # def printcve(cve):
 #     print("")
@@ -81,15 +88,20 @@ from packaging import version
 
 
 #làm sạch version dạng x.y.z
-import re
-versions=(re.split('v|\-',v))
-for sub_ver in versions:
-    if('.'in sub_ver):
-        print (sub_ver)
+# import re
+# versions=(re.split('v|\-',v))
+# for sub_ver in versions:
+#     if('.'in sub_ver):
+#         print (sub_ver)
 
-    
+def santize(versions): 
+    versions=(re.split('v|\-',versions))
+    for sub_ver in versions:
+        if('.'in sub_ver):
+            sub_ver = re.sub(r"\.0$", "", sub_ver)
+            return sub_ver
 
-
+print(santize("4.0.4"))
 
 
 #
